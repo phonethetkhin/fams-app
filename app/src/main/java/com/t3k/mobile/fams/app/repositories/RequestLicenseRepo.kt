@@ -65,6 +65,7 @@ class RequestLicenseRepo(val app: FragmentActivity) {
                                 val licenseKey = result["licenseKey"].toString()
 
                                 setStringPref(app, "licensekey", "licensekey", licenseKey)
+                                setBooleanPref(app,"islicense","islicense",true)
                                 app.startActivity(Intent(app, LoginActivity::class.java))
                                 app.finish()
                             }

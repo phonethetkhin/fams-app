@@ -47,15 +47,16 @@ class DeviceRegistrationRepo(val app:FragmentActivity) {
                         editor.putString("password",password)
                         editor.apply()
 
-                        setToast(app,"Success",Toast.LENGTH_SHORT)
                         val devCode = getStringPref(app,"devicecode","devicecode","").toString()
                         val devName = getStringPref(app,"devicename","devicename","").toString()
                         val devInfo = getDeviceInfo(app,devName,devCode)
 
-                        val loginID = getStringPref(app,"loginid","loginid","")
-                        val password = getStringPref(app,"password","password","")
+
+                        setToast(app,"Success",Toast.LENGTH_SHORT)
+setBooleanPref(app,"isregister","isregister",true)
                         val checkLicenseRepo = CheckLicenseRepo(app)
-                        checkLicenseRepo.checkDeviceLicense(devInfo,loginID,password)
+                        checkLicenseRepo.checkDeviceLicense(devInfo,loginId,password)
+
                     } else if (response.code() == 400) {
 
                         setToast(app,"Invalid Credential",Toast.LENGTH_SHORT)

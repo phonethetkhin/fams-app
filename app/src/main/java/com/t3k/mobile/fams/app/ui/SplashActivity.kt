@@ -18,6 +18,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.t3k.mobile.fams.app.R
 import com.t3k.mobile.fams.app.repositories.CheckDeviceInfoRepo
+import com.t3k.mobile.fams.app.repositories.CheckLicenseRepo
 import com.t3k.mobile.fams.app.utility.*
 import com.t3k.mobile.fams.app.viewmodels.ServerSettingViewModel
 import kotlinx.android.synthetic.main.activity_splash.*
@@ -146,10 +147,23 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun checkRegister() {
+        val isRegister = getBooleanPref(this,"isregister","isregister",false)!!
+        if(isRegister)
+        {
+            val devCode = getStringPref(this,"devicecode","devicecode","").toString()
+            val devName = getStringPref(this,"devicename","devicename","").toString()
+            val devInfo = getDeviceInfo(this,devName,devCode)
+            val loginID = getStringPref(this,"loginid","loginid","")
+            val password = getStringPref(this,"password","password","")
 
-        val dInfo = CheckDeviceInfoRepo(this)
-        dInfo.checkDeviceInfo()
+            val checkLicenseRepo = CheckLicenseRepo(this)
+            checkLicenseRepo.checkDeviceLicense(devInfo,loginID,password)
+        }
+        else {
 
+            val dInfo = CheckDeviceInfoRepo(this)
+            dInfo.checkDeviceInfo()
+        }
 
     }
 

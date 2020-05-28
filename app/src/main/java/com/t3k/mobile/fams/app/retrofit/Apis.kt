@@ -44,6 +44,7 @@ interface Apis {
         @Body requestedInfo: DeviceModel?
     ): Call<Map<String?, Any?>?>?
 
+    @JvmSuppressWildcards
     @POST("usr/login")
     fun login(@Body request: Map<String?, Any?>?): Call<Map<String?, Any?>?>
 }

@@ -17,7 +17,6 @@ import retrofit2.Response
 
 class CheckDeviceInfoRepo(val app:FragmentActivity) {
     private val apiService = Retrofitobj(getBaseURL(app)).apiservice
-    var license = false
 
 
     fun checkRegister(
