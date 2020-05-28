@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">fams-app</string>
+    //splash activity
+    <string name="t3k_technology"><font color='blue'>T3K</font> <font color='red'>Technology</font></string>
+    <string name="fixed_asset_management_system">Fixed Asset Management System</string>
+    <string name="fams_app">FAMS-App</string>
+
+    //server setting activity
+    <string name="pin">PIN</string>
+    <string name="protocol">Protocol</string>
+    <string name="api_server_setting">Server Setting</string>
+    <string name="domain">Domain</string>
+    <string name="ip_address">IP Address</string>
+    <string name="context_path">Context Path</string>
+    <string name="check">Check</string>
+    <string name="save">Save</string>
+    <string name="http">HTTP</string>
+    <string name="https_secure_http">HTTPS (Secure HTTP)</string>
+    <string name="address">Address</string>
+
+    //get register activity
+    <string name="application_not_register">Application Not Register</string>
+    <string name="error_message">Currently, your application is not registered to the FAMS System for using on this device.\n\nTo continue, your application and device must be registered.\n\nGo for registration by clicking the following button.
+    </string>
+    <string name="register">Register</string>
+
+    <string name="application_registration">Application Registration</string>
+    <string name="device_name">Device Name</string>
+    <string name="login_id">Login ID</string>
+    <string name="password">Password</string>
+    <string name="go_for_register">Go For Register</string>
+    <string name="application_registration_fail">Application Registration Fail !!!</string>
+    <string name="fail_message">Error Occurred when registering your application information to the server.</string>
+    <string name="please_contact_your_administrator">Please contact your administrator</string>
+    <string name="device_in_active">Device In_Active</string>
+    <string name="inactive_message">Currently, your device has been blocked transaction to the server by your administrator.</string>
+    <string name="application_has_no_license">Application Has No License !!!</string>
+    <string name="nolicense_message">Currently, your application has no license for using on this device.\n\nTo continue, your application must have license key.</string>
+    <string name="requestlicense_message">Request your license by using the following button</string>
+    <string name="application_license_request">Application License Request</string>
+
+    <string name="request">Request</string>
+    <string name="request_pending">Request Pending !!!</string>
+    <string name="requestpending_message">Requesting license for your application has been successfully finished and it is in pending state.\n\nFor next steps, your admin needs to approve license requests.</string>
+    <string name="request_failed">Request Failed !!!</string>
+    <string name="errorlicenserequest_message">Error occurred when requesting your application license from the server.</string>
+    <string name="try_again">Try Again</string>
+    <string name="no_extra_license">No Extra License !!!</string>
+    <string name="noextralicense_message">Currently, there is no extra license key for your application.\n\nBuy more license key for your application.</string>
+    <string name="fams">FAMS</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="appearance">Appearance</string>
+    <string name="available_servers">Available Servers</string>
+    <string name="delete_all_servers">Delete All Servers</string>
+    <string name="no_available_servers">No Available Servers</string>
+
+
+</resources>

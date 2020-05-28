@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.slidingpanelayout.widget.SlidingPaneLayout
+        android:id="@+id/splHome"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/ngvHome"
+            android:layout_width="350dp"
+            android:layout_height="0dp"
+
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            android:theme="@style/NavigationDrawerStyleforPhone"
+            app:headerLayout="@layout/nav_header"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:menu="@menu/drawer_menu"/>
+
+
+
+<include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        android:layout_width="800dp"
+
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/splHome"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/fmlHomeContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/splHome"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

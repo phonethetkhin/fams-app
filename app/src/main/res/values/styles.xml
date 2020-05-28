@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="GreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+
+    </style>
+
+
+    <style name="BlueTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="titleTextColor">@color/blue</item>
+
+        <item name="colorPrimaryDark">@color/bluedark</item>
+        <item name="colorAccent">@color/blue</item>
+        <item name="android:textColorHint">@color/blue</item>
+
+
+
+    </style>
+
+    <style name="RedTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/red</item>
+
+        <item name="colorPrimaryDark">@color/reddark</item>
+        <item name="colorAccent">@color/red</item>
+        <item name="tooltipFrameBackground">@color/red</item>
+        <item name="android:textColorHint">@color/red</item>
+
+
+    </style>
+
+    <style name="Purple" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/purple</item>
+
+        <item name="colorPrimaryDark">@color/purpledark</item>
+        <item name="colorAccent">@color/purple</item>
+        <item name="android:textColorHint">@color/purple</item>
+
+    </style>
+
+
+
+    <style name="NavigationDrawerStyleforPhone">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+
+
+
+
+
+</resources>
